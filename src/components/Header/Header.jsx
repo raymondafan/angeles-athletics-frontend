@@ -1,9 +1,13 @@
 import NavBar from "../NavBar/Navbar";
 
-const Header = ({}) => {
+const Header = ({ showMenu, onCloseMenu, onToggleMenu }) => {
   return (
     <header>
-      <NavBar />
+      <NavBar
+        showMenu={showMenu}
+        onCloseMenu={onCloseMenu}
+        onToggleMenu={onToggleMenu}
+      />
     </header>
   );
 };
