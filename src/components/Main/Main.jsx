@@ -1,8 +1,11 @@
 import HomePage from "../HomePage/HomePage";
+import ServicesPage from "../ServicesPage/ServicesPage";
+
 const Main = () => {
   return (
-    <main className="bg-wheat">
+    <main className="">
       <HomePage />
+      <ServicesPage />
     </main>
   );
 };

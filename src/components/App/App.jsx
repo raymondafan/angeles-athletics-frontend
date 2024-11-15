@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import { useState } from "react";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
+import HomePage from "../HomePage/HomePage";
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const closeMenu = () => setShowMenu(false);

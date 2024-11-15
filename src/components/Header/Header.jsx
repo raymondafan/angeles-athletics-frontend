@@ -1,3 +1,4 @@
+import HomePage from "../HomePage/HomePage";
 import NavBar from "../NavBar/Navbar";
 
 const Header = ({ showMenu, onCloseMenu, onToggleMenu }) => {

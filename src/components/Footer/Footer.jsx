@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className="bg-wheat">
       <p>
         &copy; {new Date().getFullYear()} Angeles Athletics LLC. All rights
         reserved.

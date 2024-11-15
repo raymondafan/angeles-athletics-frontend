@@ -35,7 +35,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
     };
   }, [showMenu]);
   return (
-    <nav className="nav bg-wheat p-4 shadow-lg left-0 right-0 zindex-10000 fixed">
+    <nav className="nav bg-wheat p-4 z-80 shadow-lg relative">
       {windowWidth < 768 ? (
         <ul className="flex flex-row items-center justify-between md:flex-row md:justify-around">
           <li>
@@ -166,7 +166,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
         <ul
           className={`${
             showMenu ? "max-h-screen opacity-100 p-4" : "max-h-0 opacity-0"
-          } transition-all duration-300 ease-in-out overflow-hidden flex flex-col items-center gap-4 bg-wheat`}
+          } transition-all shadow-lg duration-300 ease-in-out overflow-hidden flex flex-col items-center gap-4 bg-wheat left-0 right-0 z-50 absolute`}
         >
           <li>
             <Link
