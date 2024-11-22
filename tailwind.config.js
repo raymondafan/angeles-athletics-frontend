@@ -8,7 +8,7 @@ export default {
       },
       screens: {
         xs: "360px",
-        lg: "1200px",
+        lg: "1280px",
       },
       zIndex: {
         1000: "1000",
@@ -20,7 +20,7 @@ export default {
         purple: "#9335B3",
         lightGrey: "#38323A",
         wheat: "#FAF9EC",
-        offWhite: "#E9E8D5",
+        offWhite: "#FBFBFB",
         wetCoral: "#D0564F",
         gingerFlower: "#D0514A",
         lightGingerFlower: "#CF554E",
@@ -35,6 +35,9 @@ export default {
         sectionParagraph: "20px",
         sectionParagraphMobile: "10px",
         sectionParagraphTablet: "17px",
+        learnMoreButton: "20px",
+        learnMoreButtonMobile: "12px",
+        learnMoreButtonTablet: "17px",
       },
     },
   },

@@ -1,11 +1,11 @@
+import AboutHomeIntro from "../AboutHomeIntro/AboutHomeIntro";
 import HomePage from "../HomePage/HomePage";
-import ServicesPage from "../ServicesPage/ServicesPage";
 
 const Main = () => {
   return (
-    <main className="">
+    <main className="grow bg-gray-200 ">
       <HomePage />
-      <ServicesPage />
+      <AboutHomeIntro />
     </main>
   );
 };
