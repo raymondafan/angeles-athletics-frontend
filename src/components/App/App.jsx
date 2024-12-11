@@ -4,6 +4,9 @@ import { useState } from "react";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 
+import AboutContainer from "../AboutContainer/AboutContainer";
+import ServicesContainer from "../ServicesContainer/ServicesContainer";
+
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const closeMenu = () => setShowMenu(false);
@@ -18,8 +21,10 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/about" element={<AboutContainer />} />
+        <Route path="/services" element={<ServicesContainer />}></Route>
       </Routes>
-      <Footer />
+      <Footer onCloseMenu={closeMenu} />
     </div>
   );
 }

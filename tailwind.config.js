@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      borderRadius: {
+        custom: "20px",
+      },
       objectPosition: {
         "custom-center": "25% 75%", // x-axis 25%, y-axis 75%
       },
@@ -24,20 +27,27 @@ export default {
         wetCoral: "#D0564F",
         gingerFlower: "#D0514A",
         lightGingerFlower: "#CF554E",
+        silver: "#b6bcbf",
       },
       fontSize: {
         navLinks: "20px",
         navLinksMobile: "17px",
         aaLogo: "35px",
-        sectionHeaderTitle: "45px",
-        sectionHeaderTabletTitle: "25px",
-        sectionHeaderMobileTitle: "15px",
-        sectionParagraph: "20px",
-        sectionParagraphMobile: "10px",
-        sectionParagraphTablet: "17px",
+        sectionHeaderTitle: "40px",
+        sectionHeaderTabletTitle: "27px",
+        sectionHeaderMobileTitle: "19px",
+        title: "45px",
+        titleTablet: "27px",
+        titleMobile: "19px",
+        sectionParagraph: "24px",
+        sectionParagraphMobile: "12px",
+        sectionParagraphTablet: "19px",
         learnMoreButton: "20px",
         learnMoreButtonMobile: "12px",
         learnMoreButtonTablet: "17px",
+        footerTitle: "19px",
+        footerCopyright: "15px",
+        footerParagraph: "17px",
       },
     },
   },

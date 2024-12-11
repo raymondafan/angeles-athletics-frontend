@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 const HomePage = ({}) => {
   const navigate = useNavigate();
   return (
-    <section className="bg-[url('./assets/hmpgbackground.jpg')] bg-cover object-custom-center bg-center bg-no-repeat text-white h-[45vh] md:h-[60vh] lg:h-[80vh] ">
+    <section className="bg-[url('./assets/hmpgbackground.jpg')] bg-cover object-custom-center bg-center bg-no-repeat text-white h-[45vh] md:h-[67vh] lg:h-[88vh] ">
       <div className="flex flex-col items-start h-full max-w-[45%] mr-[50%] ml-[5%] pt-[10%] md:pt-[12%%] lg:pt-[8%] ">
-        <h1 className="text-sectionHeaderMobileTitle md:text-sectionHeaderTabletTitle lg:text-sectionHeaderTitle whitespace-nowrap pb-[5px] md:pb-[10px] lg:pb-[15px] ">
+        <h1 className="font-bold text-sectionHeaderMobileTitle md:text-sectionHeaderTabletTitle lg:text-sectionHeaderTitle whitespace-nowrap pb-[5px] md:pb-[10px] lg:pb-[15px]">
           Welcome to Angeles Athletics!
         </h1>
         <p className="pb-[15px] lg:text-sectionParagraph md:text-sectionParagraphTablet text-sectionParagraphMobile">

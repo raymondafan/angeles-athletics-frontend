@@ -35,9 +35,9 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
     };
   }, [showMenu]);
   return (
-    <nav className="nav bg-wheat p-4 z-80 shadow-lg relative">
+    <nav className="nav bg-wheat px-[5%] py-[1.5%] z-80 shadow-lg relative">
       {windowWidth < 768 ? (
-        <ul className="flex flex-row items-center justify-between md:flex-row md:justify-around">
+        <ul className="flex flex-row items-center justify-between md:flex-row ">
           <li>
             <Link
               onClick={onCloseMenu}
@@ -59,7 +59,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
         </ul>
       ) : windowWidth >= 768 && windowWidth < 1024 ? (
         // Tablet View
-        <ul className="flex items-center justify-around gap-6 p-4">
+        <ul className="flex items-center justify-between gap-6 ">
           <li>
             <Link
               to="/"
@@ -71,7 +71,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks hover:text-purple transition-colors"
             >
               Home
             </Link>
@@ -79,7 +79,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/about"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks hover:text-purple transition-colors"
             >
               About
             </Link>
@@ -87,7 +87,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/services"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks hover:text-purple transition-colors"
             >
               Services
             </Link>
@@ -95,7 +95,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/contact"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks hover:text-purple transition-colors"
             >
               Contact
             </Link>
@@ -111,7 +111,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
         </ul>
       ) : (
         //
-        <ul className="flex flex-col items-center gap-4 md:flex-row md:justify-around">
+        <ul className="flex flex-col items-center gap-4 md:flex-row justify-between">
           <li>
             <Link
               to="/"
@@ -123,7 +123,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks text-navLinks hover:text-purple transition-colors"
             >
               Home
             </Link>
@@ -131,7 +131,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/about"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks hover:text-purple transition-colors"
             >
               About
             </Link>
@@ -139,7 +139,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/services"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks hover:text-purple transition-colors"
             >
               Services
             </Link>
@@ -147,7 +147,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
           <li>
             <Link
               to="/contact"
-              className="cursor-pointer text-navLinks text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinks  hover:text-purple transition-colors"
             >
               Contact
             </Link>
@@ -166,13 +166,13 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
         <ul
           className={`${
             showMenu ? "max-h-screen opacity-100 p-4" : "max-h-0 opacity-0"
-          } transition-all shadow-lg duration-300 ease-in-out overflow-hidden flex flex-col items-center gap-4 bg-wheat left-0 right-0 z-50 absolute`}
+          } transition-all shadow-lg duration-300 ease-in-out overflow-hidden flex flex-col items-center gap-4 bg-wheat left-0 right-0 z-50 absolute rounded-bl-custom rounded-br-custom`}
         >
           <li>
             <Link
               to="/"
               onClick={onCloseMenu}
-              className="cursor-pointer text-navLinksMobile text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinksMobile hover:text-purple transition-colors"
             >
               Home
             </Link>
@@ -181,7 +181,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
             <Link
               to="/about"
               onClick={onCloseMenu}
-              className="cursor-pointer text-navLinksMobile text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinksMobile hover:text-purple transition-colors"
             >
               About
             </Link>
@@ -190,7 +190,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
             <Link
               to="/services"
               onClick={onCloseMenu}
-              className="cursor-pointer text-navLinksMobile text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinksMobile hover:text-purple transition-colors"
             >
               Services
             </Link>
@@ -199,7 +199,7 @@ const NavBar = ({ showMenu, onCloseMenu, onToggleMenu }) => {
             <Link
               to="/contact"
               onClick={onCloseMenu}
-              className="cursor-pointer text-navLinksMobile text-lightGrey hover:text-purple transition-colors"
+              className="cursor-pointer text-navLinksMobile hover:text-purple transition-colors"
             >
               Contact
             </Link>
